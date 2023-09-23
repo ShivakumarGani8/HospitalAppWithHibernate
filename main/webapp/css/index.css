@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+}
+.madatory{
+    color:red;
+    font-size: 1.5rem;
+}
+h1 {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    top: 0;
+    margin:0px;
+    position: sticky;
+}
+#formElement{
+    width: 100%;
+    height: 615px;
+}
+h1{
+    background-color: #715454;
+}
+nav{
+    background-color: rgb(26, 26, 77);
+    padding: 20px;
+}
+nav a{
+color: white;
+font-size: large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;
+margin: 0 10px;
+}
+
+nav a:hover{
+    color:gold;
+    text-decoration: underline;
+}
+footer{
+    height: 10%;
+    background-color: #FE4B74;
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+}
