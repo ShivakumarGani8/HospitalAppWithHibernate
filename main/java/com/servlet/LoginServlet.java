@@ -30,7 +30,6 @@ public class LoginServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	private SessionFactory factory;
 	private Session session;
-	private Transaction transaction;
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

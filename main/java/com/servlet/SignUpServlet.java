@@ -43,25 +43,14 @@ public class SignUpServlet extends HttpServlet {
 			factory = FactoryGenerator.getFactory();
 			session = factory.openSession();
 			transaction = session.beginTransaction();
-			
-			Query query= session.createQuery("from UserData where username =: userName");
-			query.setParameter("userName", userName);
-			List<UserData> resultSet= query.getResultList();
-			
-			if(!resultSet.isEmpty()) {
-				response.getWriter().write("Data already exists!");
-			}else {
-				UserData userData = new UserData(email, userName, password);
-				session.save(userData);
-				response.getWriter().write("Data updated successfully");
-	            response.getWriter().write("<script>alert('Data updated successfully');</script>");
-	            transaction.commit();
-			}
+
+			UserData userData = new UserData(email, userName, password);
+			session.save(userData);
+			transaction.commit();
 
 		} catch (Exception e) {
-			if (transaction != null) transaction.rollback();
-	        e.printStackTrace();
-	        response.getWriter().write("Error updating data");
+			e.printStackTrace();
+
 		} finally {
 			session.close();
 			factory.close();

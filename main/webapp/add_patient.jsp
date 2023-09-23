@@ -7,15 +7,15 @@
     <form action="AddPatient" method="post" onsubmit="return validatePatientForm()">
         <div class="form-group">
             <label for="first_name">First Name<span class="mandatory">*</span> :</label>
-            <input type="text" id="first_name" name="first_name" value="Shiva" required>
+            <input type="text" id="first_name" name="first_name" value="Patient" required>
         </div>
         <div class="form-group">
             <label for="last_name">Last Name<span class="mandatory">*</span> :</label>
-            <input type="text" id="last_name" name="last_name" value="Gani" required>
+            <input type="text" id="last_name" name="last_name" value="1" required>
         </div>
         <div class="form-group">
             <label for="date_of_birth">Date of Birth<span class="mandatory">*</span> :</label>
-            <input type="date" id="date_of_birth" name="date_of_birth" value="07-08-2023" required>
+            <input type="date" id="date_of_birth" name="date_of_birth" value="2002-12-23" required>
         </div>
         <div class="form-group">
             <label for="gender">Gender<span class="mandatory">*</span> :</label>
@@ -25,7 +25,7 @@
         </div>
         <div class="form-group">
             <label for="father_spouse_name">Father/Spouse Name:</label>
-            <input type="text" id="father_spouse_name" name="father_spouse_name">
+            <input type="text" id="father_spouse_name" value="Father" name="father_spouse_name">
         </div>
         <div class="form-group">
             <label for="blood_group">Blood Group<span class="mandatory">*</span> :</label>
@@ -42,7 +42,7 @@
         </div>
         <div class="form-group">
             <label for="contact_number">Contact Number<span class="mandatory">*</span> :</label>
-            <input type="text" id="contact_number" name="contact_number" value="1234567890" required>
+            <input type="text" id="contact_number" name="contact_number" value="6656564521" required>
         </div>
         <div class="form-group">
             <label for="visited_earlier">Visited Earlier</label>
